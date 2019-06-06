@@ -9,12 +9,12 @@ namespace SchoolProject.Classes
     public class School
     {
         public Dictionary<String,Classroom> classrooms;
-        public Dictionary<int, Student> students; 
+        public Dictionary<uint, Student> students; 
 
         public School()
         {
             this.classrooms = new Dictionary<String,Classroom>();
-            this.students = new Dictionary<int,Student>();
+            this.students = new Dictionary<uint,Student>();
         }
 
         /// <summary>
@@ -23,7 +23,7 @@ namespace SchoolProject.Classes
         /// <param name="student"></param>
         public void AddStudent(Student student)
         {
-            int key = students.Keys.Last()+1;
+            uint key = students.Keys.Last()+1;
             student.ID = key;
             students.Add(student.ID, student);
         }
@@ -34,7 +34,8 @@ namespace SchoolProject.Classes
         /// <param name="key">Student ID</param>
         public void RemoveStudent(int key)
         {
-            students.Remove(key);
+            if(key<0) throw new ArgumentException($"{nameof(key)} cannot be below zero", nameof(key));
+            students.Remove((uint)key);
         }
 
         /// <summary>

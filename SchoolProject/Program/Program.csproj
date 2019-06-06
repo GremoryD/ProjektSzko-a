@@ -4,10 +4,10 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{8C758605-84AD-456D-9264-5DD32859440C}</ProjectGuid>
-    <OutputType>Library</OutputType>
-    <RootNamespace>SchoolProject</RootNamespace>
-    <AssemblyName>SchoolProject</AssemblyName>
+    <ProjectGuid>{13A2FF12-973F-4A42-8496-B57152029E21}</ProjectGuid>
+    <OutputType>Exe</OutputType>
+    <RootNamespace>Program</RootNamespace>
+    <AssemblyName>Program</AssemblyName>
     <TargetFrameworkVersion>v4.7.1</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
@@ -32,19 +32,8 @@
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
-  <PropertyGroup>
-    <StartupObject />
-  </PropertyGroup>
   <ItemGroup>
     <None Include="App.config" />
-  </ItemGroup>
-  <ItemGroup />
-  <ItemGroup>
-    <Compile Include="Classes\Classroom.cs" />
-    <Compile Include="Classes\School.cs" />
-    <Compile Include="Classes\Student.cs" />
-    <Compile Include="Classes\Subject.cs" />
-    <Compile Include="Classes\Teacher.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
