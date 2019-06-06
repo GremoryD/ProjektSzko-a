@@ -35,5 +35,12 @@
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
+  <ItemGroup />
+  <ItemGroup>
+    <Compile Include="Classes\Classroom.cs" />
+    <Compile Include="Classes\Student.cs" />
+    <Compile Include="Classes\Subject.cs" />
+    <Compile Include="Classes\Teacher.cs" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

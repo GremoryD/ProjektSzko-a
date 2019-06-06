@@ -46,6 +46,9 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="TestClasses\ClassRoomTest.cs" />
+    <Compile Include="TestClasses\StudentTest.cs" />
+    <Compile Include="TestClasses\SubjectTest.cs" />
+    <Compile Include="TestClasses\TeacherTest.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
