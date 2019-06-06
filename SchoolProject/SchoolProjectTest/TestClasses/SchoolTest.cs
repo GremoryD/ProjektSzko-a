@@ -10,7 +10,11 @@ namespace SchoolProjectTest.TestClasses
     [TestFixture]
     public class SchoolTest
     {
+        [Test]
+        public void CreateSchool()
+        {
 
+        }
 
     }
 }

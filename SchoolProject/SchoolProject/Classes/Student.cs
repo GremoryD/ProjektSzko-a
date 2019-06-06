@@ -11,11 +11,13 @@ namespace SchoolProject.Classes
         private string _name;
         private string _surname; 
 
-        public int ID;
+        public uint ID;
 
         public Student(int iD, string name, string surname)
         {
-            ID = iD;
+            if (iD < 0) throw new ArgumentException($"{nameof(iD)} cannot be below zero", nameof(iD));
+
+            ID = Convert.ToUInt32(iD);
             Name = name;
             Surname = surname;
         }
