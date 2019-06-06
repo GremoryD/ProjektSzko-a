@@ -10,8 +10,8 @@ namespace SchoolProject.Classes
     {
         public string Name { get; set; }
         public int LectionCount { set; get; }
-        public int ExerciseCount { set; get; }
-
+        public int ExerciseCount { set; get; } 
+         
 
     }
 }
